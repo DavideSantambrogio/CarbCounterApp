@@ -1,0 +1,2040 @@
+[
+    {
+        "id": 1,
+        "alimento": "Bastoncini di crusca di frumento",
+        "cho": 38
+    },
+    {
+        "id": 2,
+        "alimento": "Biscotti alla soia",
+        "cho": 71
+    },
+    {
+        "id": 3,
+        "alimento": "Biscotti frollini",
+        "cho": 72
+    },
+    {
+        "id": 4,
+        "alimento": "Biscotti integrali",
+        "cho": 71
+    },
+    {
+        "id": 5,
+        "alimento": "Biscotti integrali con soia",
+        "cho": 60
+    },
+    {
+        "id": 6,
+        "alimento": "Biscotti secchi",
+        "cho": 80
+    },
+    {
+        "id": 7,
+        "alimento": "Biscotti wafers",
+        "cho": 76
+    },
+    {
+        "id": 8,
+        "alimento": "Cornetti",
+        "cho": 55
+    },
+    {
+        "id": 9,
+        "alimento": "Cornflakes",
+        "cho": 87
+    },
+    {
+        "id": 10,
+        "alimento": "Cous cous (crudo)",
+        "cho": 77
+    },
+    {
+        "id": 11,
+        "alimento": "Cous cous (cotto)",
+        "cho": 40
+    },
+    {
+        "id": 12,
+        "alimento": "Crackers al formaggio",
+        "cho": 59
+    },
+    {
+        "id": 13,
+        "alimento": "Crackers alla soia",
+        "cho": 68
+    },
+    {
+        "id": 14,
+        "alimento": "Crackers integrali",
+        "cho": 62
+    },
+    {
+        "id": 15,
+        "alimento": "Crackers salati",
+        "cho": 68
+    },
+    {
+        "id": 16,
+        "alimento": "Croissants",
+        "cho": 38
+    },
+    {
+        "id": 17,
+        "alimento": "Crusca di frumento",
+        "cho": 27
+    },
+    {
+        "id": 18,
+        "alimento": "Farina d'avena",
+        "cho": 66
+    },
+    {
+        "id": 19,
+        "alimento": "Farina d'orzo",
+        "cho": 68
+    },
+    {
+        "id": 20,
+        "alimento": "Farina di castagne",
+        "cho": 62
+    },
+    {
+        "id": 21,
+        "alimento": "Farina di frumento duro",
+        "cho": 63
+    },
+    {
+        "id": 22,
+        "alimento": "Farina di frumento integrale",
+        "cho": 62
+    },
+    {
+        "id": 23,
+        "alimento": "Farina di frumento tipo 0",
+        "cho": 70
+    },
+    {
+        "id": 24,
+        "alimento": "Farina di frumento tipo 00",
+        "cho": 72
+    },
+    {
+        "id": 25,
+        "alimento": "Farina di mais",
+        "cho": 74
+    },
+    {
+        "id": 26,
+        "alimento": "Farina di manioca (tapioca)",
+        "cho": 87
+    },
+    {
+        "id": 27,
+        "alimento": "Farina di riso",
+        "cho": 79
+    },
+    {
+        "id": 28,
+        "alimento": "Farina di segale",
+        "cho": 68
+    },
+    {
+        "id": 29,
+        "alimento": "Farina di soia",
+        "cho": 23
+    },
+    {
+        "id": 30,
+        "alimento": "Farro perlato, crudo",
+        "cho": 69
+    },
+    {
+        "id": 31,
+        "alimento": "Farro perlato, cotto bollito",
+        "cho": 37
+    },
+    {
+        "id": 32,
+        "alimento": "Fette biscottate",
+        "cho": 75
+    },
+    {
+        "id": 33,
+        "alimento": "Fette biscottate integrali",
+        "cho": 63
+    },
+    {
+        "id": 34,
+        "alimento": "Fiocchi d'avena",
+        "cho": 67
+    },
+    {
+        "id": 35,
+        "alimento": "Frumento duro",
+        "cho": 63
+    },
+    {
+        "id": 36,
+        "alimento": "Frumento tenero",
+        "cho": 65
+    },
+    {
+        "id": 37,
+        "alimento": "Gnocchi di patate, crudi",
+        "cho": 38
+    },
+    {
+        "id": 38,
+        "alimento": "Grano saraceno",
+        "cho": 61
+    },
+    {
+        "id": 39,
+        "alimento": "Grissini",
+        "cho": 65
+    },
+    {
+        "id": 40,
+        "alimento": "Mais",
+        "cho": 75
+    },
+    {
+        "id": 41,
+        "alimento": "Mais, in scatola, sgocciolato",
+        "cho": 21
+    },
+    {
+        "id": 42,
+        "alimento": "Mais, amido",
+        "cho": 87
+    },
+    {
+        "id": 43,
+        "alimento": "Miglio",
+        "cho": 65
+    },
+    {
+        "id": 44,
+        "alimento": "Miglio decorticato",
+        "cho": 68
+    },
+    {
+        "id": 45,
+        "alimento": "Muesli",
+        "cho": 72
+    },
+    {
+        "id": 46,
+        "alimento": "Orzo perlato",
+        "cho": 74
+    },
+    {
+        "id": 47,
+        "alimento": "Pancarrè",
+        "cho": 51
+    },
+    {
+        "id": 48,
+        "alimento": "Pane al malto",
+        "cho": 57
+    },
+    {
+        "id": 49,
+        "alimento": "Pane azzimo",
+        "cho": 82
+    },
+    {
+        "id": 50,
+        "alimento": "Pane bianco",
+        "cho": 60
+    },
+    {
+        "id": 51,
+        "alimento": "Pane di segale",
+        "cho": 45
+    },
+    {
+        "id": 52,
+        "alimento": "Pane di tipo integrale",
+        "cho": 44
+    },
+    {
+        "id": 53,
+        "alimento": "Pane tipo semi integrale",
+        "cho": 52
+    },
+    {
+        "id": 54,
+        "alimento": "Pane formato rosetta",
+        "cho": 58
+    },
+    {
+        "id": 55,
+        "alimento": "Pane in cassetta bianco ",
+        "cho": 48
+    },
+    {
+        "id": 56,
+        "alimento": "Pane in cassetta di grano duro ",
+        "cho": 45
+    },
+    {
+        "id": 57,
+        "alimento": "Pane in cassetta integrale ",
+        "cho": 38
+    },
+    {
+        "id": 58,
+        "alimento": "Pangrattato",
+        "cho": 78
+    },
+    {
+        "id": 59,
+        "alimento": "Panini al latte",
+        "cho": 48
+    },
+    {
+        "id": 60,
+        "alimento": "Panini all'olio",
+        "cho": 53
+    },
+    {
+        "id": 61,
+        "alimento": "Pasta all'uovo secca cruda",
+        "cho": 71
+    },
+    {
+        "id": 62,
+        "alimento": "Pasta di semola cruda",
+        "cho": 73
+    },
+    {
+        "id": 63,
+        "alimento": "Pasta di semola, integrale cruda",
+        "cho": 66
+    },
+    {
+        "id": 64,
+        "alimento": "Pizza bianca",
+        "cho": 58
+    },
+    {
+        "id": 65,
+        "alimento": "Pizza con pomodoro",
+        "cho": 41
+    },
+    {
+        "id": 66,
+        "alimento": "Pizza con pomodoro e mozzarella",
+        "cho": 36
+    },
+    {
+        "id": 67,
+        "alimento": "Pizza Napoletana Margherita (STG)",
+        "cho": 27
+    },
+    {
+        "id": 68,
+        "alimento": "Polenta, cruda",
+        "cho": 73
+    },
+    {
+        "id": 69,
+        "alimento": "Polenta, cotta",
+        "cho": 18
+    },
+    {
+        "id": 70,
+        "alimento": "Quinoa, cruda",
+        "cho": 58
+    },
+    {
+        "id": 71,
+        "alimento": "Ravioli, crudi, freschi",
+        "cho": 41
+    },
+    {
+        "id": 72,
+        "alimento": "Riso Basmati, crudo",
+        "cho": 83
+    },
+    {
+        "id": 73,
+        "alimento": "Riso Venere, crudo",
+        "cho": 80
+    },
+    {
+        "id": 74,
+        "alimento": "Riso brillato crudo",
+        "cho": 80
+    },
+    {
+        "alimento": "Riso integrale crudo",
+        "cho": 77
+    },
+    {
+        "id": 75,
+        "alimento": "Riso parboiled crudo",
+        "cho": 81
+    },
+    {
+        "id": 76,
+        "alimento": "Riso soffiato da prima colazione",
+        "cho": 85
+    },
+    {
+        "id": 77,
+        "alimento": "Semola",
+        "cho": 77
+    },
+    {
+        "id": 78,
+        "alimento": "Tortellini, freschi",
+        "cho": 50
+    },
+    {
+        "id": 79,
+        "alimento": "Tortellini, secchi",
+        "cho": 58
+    },
+    {
+        "id": 80,
+        "alimento": "Tabulè (ricetta - insalata di bulgur e verdure)",
+        "cho": 14
+    },
+    {
+        "id": 81,
+        "alimento": "Patate crude",
+        "cho": 16
+    },
+    {
+        "id": 82,
+        "alimento": "Patate novelle crude",
+        "cho": 16
+    },
+    {
+        "id": 83,
+        "alimento": "Patate cotte arrosto",
+        "cho": 26
+    },
+    {
+        "id": 84,
+        "alimento": "Patate cotte bollite",
+        "cho": 18
+    },
+    {
+        "id": 85,
+        "alimento": "Patatine fritte, in busta",
+        "cho": 59
+    },
+    {
+        "id": 86,
+        "alimento": "Patate fritte",
+        "cho": 30
+    },
+    {
+        "id": 87,
+        "alimento": "Patate fritte, fast food",
+        "cho": 38
+    },
+    {
+        "id": 88,
+        "alimento": "Ceci in scatola, scolati",
+        "cho": 14
+    },
+    {
+        "id": 89,
+        "alimento": "Ceci secchi crudi",
+        "cho": 47
+    },
+    {
+        "id": 90,
+        "alimento": "Falafel (preparato con ceci, fave )",
+        "cho": 20
+    },
+    {
+        "id": 91,
+        "alimento": "Fagioli crudi",
+        "cho": 48
+    },
+    {
+        "id": 92,
+        "alimento": "Fagioli-Borlotti freschi crudi",
+        "cho": 23
+    },
+    {
+        "id": 93,
+        "alimento": "Fagioli-Borlotti in scatola, scolati",
+        "cho": 16
+    },
+    {
+        "id": 94,
+        "alimento": "Fagioli-Borlotti secchi crudi",
+        "cho": 48
+    },
+    {
+        "id": 95,
+        "alimento": "Fagioli-Cannellini in scatola, scolati",
+        "cho": 13
+    },
+    {
+        "id": 96,
+        "alimento": "Fagioli-Cannellini secchi crudi",
+        "cho": 46
+    },
+    {
+        "id": 97,
+        "alimento": "Fagioli, dall'occhio secchi",
+        "cho": 51
+    },
+    {
+        "id": 98,
+        "alimento": "Fagiolini freschi crudi",
+        "cho": 2
+    },
+    {
+        "id": 99,
+        "alimento": "Fave fresche crude",
+        "cho": 5
+    },
+    {
+        "id": 100,
+        "alimento": "Fave secche crude",
+        "cho": 53
+    },
+    {
+        "id": 101,
+        "alimento": "Fave secche sgusciate crude",
+        "cho": 54
+    },
+    {
+        "id": 102,
+        "alimento": "Lenticchie in scatola, scolate",
+        "cho": 15
+    },
+    {
+        "id": 103,
+        "alimento": "Lenticchie secche crude",
+        "cho": 51
+    },
+    {
+        "id": 104,
+        "alimento": "Lupini, ammollati",
+        "cho": 7
+    },
+    {
+        "id": 105,
+        "alimento": "Piselli freschi crudi",
+        "cho": 7
+    },
+    {
+        "id": 106,
+        "alimento": "Piselli in scatola, scolati",
+        "cho": 11
+    },
+    {
+        "id": 107,
+        "alimento": "Piselli secchi",
+        "cho": 48
+    },
+    {
+        "id": 108,
+        "alimento": "Piselli surgelati",
+        "cho": 7
+    },
+    {
+        "id": 109,
+        "alimento": "Soia secca",
+        "cho": 23
+    },
+    {
+        "id": 110,
+        "alimento": "Soia, isolato proteico",
+        "cho": 5
+    },
+    {
+        "id": 111,
+        "alimento": "Hummus (ricetta - crema di ceci)",
+        "cho": 9
+    },
+    {
+        "id": 112,
+        "alimento": "Aglio",
+        "cho": 1
+    },
+    {
+        "id": 113,
+        "alimento": "Agretti",
+        "cho": 2
+    },
+    {
+        "id": 114,
+        "alimento": "Asparagi di bosco",
+        "cho": 4
+    },
+    {
+        "id": 115,
+        "alimento": "Asparagi di campo crudi",
+        "cho": 3
+    },
+    {
+        "id": 116,
+        "alimento": "Asparagi di serra",
+        "cho": 3
+    },
+    {
+        "id": 117,
+        "alimento": "Barbabietole rosse crude",
+        "cho": 4
+    },
+    {
+        "id": 118,
+        "alimento": "Basilico",
+        "cho": 5
+    },
+    {
+        "id": 119,
+        "alimento": "Bieta cruda",
+        "cho": 2
+    },
+    {
+        "id": 120,
+        "alimento": "Broccoletti di rapa crudi",
+        "cho": 2
+    },
+    {
+        "id": 121,
+        "alimento": "Broccolo a testa crudo",
+        "cho": 3
+    },
+    {
+        "id": 122,
+        "alimento": "Carciofi crudi",
+        "cho": 3
+    },
+    {
+        "id": 123,
+        "alimento": "Carciofi, surgelati crudi",
+        "cho": 3
+    },
+    {
+        "id": 124,
+        "alimento": "Cardi crudi",
+        "cho": 2
+    },
+    {
+        "id": 125,
+        "alimento": "Carote crude",
+        "cho": 8
+    },
+    {
+        "id": 126,
+        "alimento": "Cavolfiore crudo",
+        "cho": 3
+    },
+    {
+        "id": 127,
+        "alimento": "Cavoli di bruxelles crudi",
+        "cho": 4
+    },
+    {
+        "id": 128,
+        "alimento": "Cavolo broccolo verde ramoso crudo",
+        "cho": 2
+    },
+    {
+        "id": 129,
+        "alimento": "Cavolo cappuccio rosso",
+        "cho": 3
+    },
+    {
+        "id": 130,
+        "alimento": "Cavolo cappuccio verde crudo",
+        "cho": 3
+    },
+    {
+        "id": 131,
+        "alimento": "Cavolo verza crudo",
+        "cho": 4
+    },
+    {
+        "id": 132,
+        "alimento": "Cetrioli",
+        "cho": 2
+    },
+    {
+        "id": 133,
+        "alimento": "Cicoria da taglio, coltivata",
+        "cho": 2
+    },
+    {
+        "id": 134,
+        "alimento": "Cicoria di campo cruda",
+        "cho": 1
+    },
+    {
+        "id": 135,
+        "alimento": "Cicoria witloof o indivia belga",
+        "cho": 3
+    },
+    {
+        "id": 136,
+        "alimento": "Cipolle crude",
+        "cho": 6
+    },
+    {
+        "id": 137,
+        "alimento": "Cipolline crude",
+        "cho": 9
+    },
+    {
+        "id": 138,
+        "alimento": "Finocchi crudi",
+        "cho": 2
+    },
+    {
+        "id": 139,
+        "alimento": "Fiori di zucca",
+        "cho": 1
+    },
+    {
+        "id": 140,
+        "alimento": "Foglie di rapa",
+        "cho": 3
+    },
+    {
+        "id": 141,
+        "alimento": "Funghi coltivati pleurotes crudi",
+        "cho": 6
+    },
+    {
+        "id": 142,
+        "alimento": "Funghi coltivati prataioli crudi",
+        "cho": 1
+    },
+    {
+        "id": 143,
+        "alimento": "Funghi porcini",
+        "cho": 1
+    },
+    {
+        "id": 144,
+        "alimento": "Germogli di soia",
+        "cho": 3
+    },
+    {
+        "id": 145,
+        "alimento": "Indivia",
+        "cho": 3
+    },
+    {
+        "id": 146,
+        "alimento": "Lattuga",
+        "cho": 2
+    },
+    {
+        "id": 147,
+        "alimento": "Lattuga a cappuccio",
+        "cho": 3
+    },
+    {
+        "id": 148,
+        "alimento": "Lattuga da taglio",
+        "cho": 2
+    },
+    {
+        "id": 149,
+        "alimento": "Lattughino fresco",
+        "cho": 1
+    },
+    {
+        "id": 150,
+        "alimento": "Melanzane crude",
+        "cho": 3
+    },
+    {
+        "id": 151,
+        "alimento": "Menta",
+        "cho": 5
+    },
+    {
+        "id": 152,
+        "alimento": "Peperoncini piccanti",
+        "cho": 4
+    },
+    {
+        "id": 153,
+        "alimento": "Peperoni crudi",
+        "cho": 4
+    },
+    {
+        "id": 154,
+        "alimento": "Peperoni cotti, in padella",
+        "cho": 24
+    },
+    {
+        "id": 155,
+        "alimento": "Peperoni, gialli crudi",
+        "cho": 7
+    },
+    {
+        "id": 156,
+        "alimento": "Peperoni rossi crudi",
+        "cho": 7
+    },
+    {
+        "id": 157,
+        "alimento": "Peperoni, rossi e gialli",
+        "cho": 7
+    },
+    {
+        "id": 158,
+        "alimento": "Peperoni, verdi",
+        "cho": 6
+    },
+    {
+        "id": 159,
+        "alimento": "Pomodori San Marzano",
+        "cho": 3
+    },
+    {
+        "id": 160,
+        "alimento": "Pomodori da insalata",
+        "cho": 3
+    },
+    {
+        "id": 161,
+        "alimento": "Pomodori maturi",
+        "cho": 4
+    },
+    {
+        "id": 162,
+        "alimento": "Pomodori, conserva",
+        "cho": 20
+    },
+    {
+        "id": 163,
+        "alimento": "Pomodori, passata",
+        "cho": 3
+    },
+    {
+        "id": 164,
+        "alimento": "Pomodori, pelati in scatola",
+        "cho": 3
+    },
+    {
+        "id": 165,
+        "alimento": "Pomodori, succo",
+        "cho": 3
+    },
+    {
+        "id": 166,
+        "alimento": "Pomodorini ciliegino, freschi",
+        "cho": 7
+    },
+    {
+        "id": 167,
+        "alimento": "Porri crudi",
+        "cho": 5
+    },
+    {
+        "id": 168,
+        "alimento": "Radicchio rosso",
+        "cho": 2
+    },
+    {
+        "id": 169,
+        "alimento": "Radicchio verde",
+        "cho": 1
+    },
+    {
+        "id": 170,
+        "alimento": "Rape crude",
+        "cho": 4
+    },
+    {
+        "id": 171,
+        "alimento": "Ravanelli",
+        "cho": 2
+    },
+    {
+        "id": 172,
+        "alimento": "Rosmarino",
+        "cho": 14
+    },
+    {
+        "id": 173,
+        "alimento": "Rughetta o rucola",
+        "cho": 4
+    },
+    {
+        "id": 174,
+        "alimento": "Salvia",
+        "cho": 16
+    },
+    {
+        "id": 175,
+        "alimento": "Sedano crudo",
+        "cho": 2
+    },
+    {
+        "id": 176,
+        "alimento": "Sedano rapa",
+        "cho": 4
+    },
+    {
+        "id": 177,
+        "alimento": "Spinaci crudi",
+        "cho": 3
+    },
+    {
+        "id": 178,
+        "alimento": "Tarassaco o dente di leone",
+        "cho": 4
+    },
+    {
+        "id": 179,
+        "alimento": "Tartufo nero",
+        "cho": 1
+    },
+    {
+        "id": 180,
+        "alimento": "Vegetali misti, surgelati",
+        "cho": 14
+    },
+    {
+        "id": 181,
+        "alimento": "Zucca gialla",
+        "cho": 4
+    },
+    {
+        "id": 182,
+        "alimento": "Zucchine crude",
+        "cho": 2
+    },
+    {
+        "id": 183,
+        "alimento": "Zucchine scure",
+        "cho": 2
+    },
+    {
+        "id": 184,
+        "alimento": "Albicocche",
+        "cho": 10
+    },
+    {
+        "id": 185,
+        "alimento": "Albicocche, disidratate",
+        "cho": 81
+    },
+    {
+        "id": 186,
+        "alimento": "Albicocche, sciroppate",
+        "cho": 16
+    },
+    {
+        "id": 187,
+        "alimento": "Albicocche, secche",
+        "cho": 67
+    },
+    {
+        "id": 188,
+        "alimento": "Amarene",
+        "cho": 10
+    },
+    {
+        "id": 189,
+        "alimento": "Ananas",
+        "cho": 10
+    },
+    {
+        "id": 190,
+        "alimento": "Ananas, sciroppato",
+        "cho": 17
+    },
+    {
+        "id": 191,
+        "alimento": "Anona",
+        "cho": 16
+    },
+    {
+        "id": 192,
+        "alimento": "Arance",
+        "cho": 8
+    },
+    {
+        "id": 193,
+        "alimento": "Arance, succo",
+        "cho": 8
+    },
+    {
+        "id": 194,
+        "alimento": "Avocado",
+        "cho": 2
+    },
+    {
+        "id": 195,
+        "alimento": "Babaco (ibrido della papaya)",
+        "cho": 5
+    },
+    {
+        "id": 196,
+        "alimento": "Banane",
+        "cho": 17
+    },
+    {
+        "id": 197,
+        "alimento": "Ciliege",
+        "cho": 11
+    },
+    {
+        "id": 198,
+        "alimento": "Ciliege, candite",
+        "cho": 66
+    },
+    {
+        "id": 199,
+        "alimento": "Clementine",
+        "cho": 9
+    },
+    {
+        "id": 200,
+        "alimento": "Cocktail di frutta sciroppata",
+        "cho": 15
+    },
+    {
+        "id": 201,
+        "alimento": "Cocomero",
+        "cho": 4
+    },
+    {
+        "id": 202,
+        "alimento": "Datteri, secchi",
+        "cho": 63
+    },
+    {
+        "id": 203,
+        "alimento": "Feijoa",
+        "cho": 10
+    },
+    {
+        "id": 204,
+        "alimento": "Fichi, canditi",
+        "cho": 74
+    },
+    {
+        "id": 205,
+        "alimento": "Fichi d'india",
+        "cho": 13
+    },
+    {
+        "id": 206,
+        "alimento": "Fichi freschi",
+        "cho": 14
+    },
+    {
+        "id": 207,
+        "alimento": "Fichi, seccati al forno e mandorlati",
+        "cho": 58
+    },
+    {
+        "id": 208,
+        "alimento": "Fichi, secchi",
+        "cho": 58
+    },
+    {
+        "id": 209,
+        "alimento": "Fragole",
+        "cho": 5
+    },
+    {
+        "id": 210,
+        "alimento": "Guava",
+        "cho": 4
+    },
+    {
+        "id": 211,
+        "alimento": "Kiwi",
+        "cho": 9
+    },
+    {
+        "id": 212,
+        "alimento": "Lamponi",
+        "cho": 3
+    },
+    {
+        "id": 213,
+        "alimento": "Limoni",
+        "cho": 3
+    },
+    {
+        "id": 214,
+        "alimento": "Limoni, succo",
+        "cho": 3
+    },
+    {
+        "id": 215,
+        "alimento": "Litchi",
+        "cho": 17
+    },
+    {
+        "id": 216,
+        "alimento": "Loti o kaki",
+        "cho": 16
+    },
+    {
+        "id": 217,
+        "alimento": "Mandaranci",
+        "cho": 13
+    },
+    {
+        "id": 218,
+        "alimento": "Mandarini",
+        "cho": 18
+    },
+    {
+        "id": 219,
+        "alimento": "Mango",
+        "cho": 13
+    },
+    {
+        "id": 220,
+        "alimento": "Melagrane",
+        "cho": 16
+    },
+    {
+        "id": 221,
+        "alimento": "Mele cotogne",
+        "cho": 6
+    },
+    {
+        "id": 222,
+        "alimento": "Mele fresche - annurche",
+        "cho": 10
+    },
+    {
+        "id": 223,
+        "alimento": "Mele fresche - deliziose",
+        "cho": 11
+    },
+    {
+        "id": 224,
+        "alimento": "Mele fresche - golden",
+        "cho": 11
+    },
+    {
+        "id": 225,
+        "alimento": "Mele fresche - granny smith",
+        "cho": 9
+    },
+    {
+        "id": 226,
+        "alimento": "Mele fresche - imperatore",
+        "cho": 11
+    },
+    {
+        "id": 227,
+        "alimento": "Mele fresche - renette",
+        "cho": 10
+    },
+    {
+        "id": 228,
+        "alimento": "Mele, disidratate",
+        "cho": 92
+    },
+    {
+        "id": 229,
+        "alimento": "Melone d'estate",
+        "cho": 7
+    },
+    {
+        "id": 230,
+        "alimento": "Melone d'inverno",
+        "cho": 5
+    },
+    {
+        "id": 231,
+        "alimento": "Mirtilli",
+        "cho": 10
+    },
+    {
+        "id": 232,
+        "alimento": "Mora di rovo",
+        "cho": 8
+    },
+    {
+        "id": 233,
+        "alimento": "Nespole",
+        "cho": 6
+    },
+    {
+        "id": 234,
+        "alimento": "Olive da tavola conservate",
+        "cho": 5
+    },
+    {
+        "id": 235,
+        "alimento": "Olive nere",
+        "cho": 1
+    },
+    {
+        "id": 236,
+        "alimento": "Olive verdi",
+        "cho": 1
+    },
+    {
+        "id": 237,
+        "alimento": "Olive verdi in salamoia",
+        "cho": 1
+    },
+    {
+        "id": 238,
+        "alimento": "Papaia",
+        "cho": 7
+    },
+    {
+        "id": 239,
+        "alimento": "Passiflora",
+        "cho": 6
+    },
+    {
+        "id": 240,
+        "alimento": "Pere abate",
+        "cho": 13
+    },
+    {
+        "id": 241,
+        "alimento": "Pere, candite",
+        "cho": 74
+    },
+    {
+        "id": 242,
+        "alimento": "Pere fresche, senza buccia",
+        "cho": 9
+    },
+    {
+        "id": 243,
+        "alimento": "Pere William",
+        "cho": 10
+    },
+    {
+        "id": 244,
+        "alimento": "Pesche con buccia",
+        "cho": 6
+    },
+    {
+        "id": 245,
+        "alimento": "Pesche senza buccia",
+        "cho": 6
+    },
+    {
+        "id": 246,
+        "alimento": "Pesche, disidratate",
+        "cho": 88
+    },
+    {
+        "id": 247,
+        "alimento": "Pesche, sciroppate",
+        "cho": 14
+    },
+    {
+        "id": 248,
+        "alimento": "Pesche, secche",
+        "cho": 68
+    },
+    {
+        "id": 249,
+        "alimento": "Peschenoci fresche",
+        "cho": 7
+    },
+    {
+        "id": 250,
+        "alimento": "Pompelmo",
+        "cho": 6
+    },
+    {
+        "id": 251,
+        "alimento": "Prugne",
+        "cho": 11
+    },
+    {
+        "id": 252,
+        "alimento": "Prugne gialle",
+        "cho": 7
+    },
+    {
+        "id": 253,
+        "alimento": "Prugne rosse",
+        "cho": 11
+    },
+    {
+        "id": 254,
+        "alimento": "Prugne secche",
+        "cho": 55
+    },
+    {
+        "id": 255,
+        "alimento": "Ribes",
+        "cho": 10
+    },
+    {
+        "id": 256,
+        "alimento": "Succo di frutta [albicocca e pera]",
+        "cho": 15
+    },
+    {
+        "id": 257,
+        "alimento": "Uva",
+        "cho": 16
+    },
+    {
+        "id": 258,
+        "alimento": "Uva, bianca",
+        "cho": 22
+    },
+    {
+        "id": 259,
+        "alimento": "Uva, nera",
+        "cho": 13
+    },
+    {
+        "id": 260,
+        "alimento": "Uva, secca",
+        "cho": 72
+    },
+    {
+        "id": 261,
+        "alimento": "Uva, succo, in cartone",
+        "cho": 17
+    },
+    {
+        "id": 262,
+        "alimento": "Anacardi",
+        "cho": 33
+    },
+    {
+        "id": 263,
+        "alimento": "Arachidi, tostate",
+        "cho": 9
+    },
+    {
+        "id": 264,
+        "alimento": "Carrube",
+        "cho": 50
+    },
+    {
+        "id": 265,
+        "alimento": "Castagne",
+        "cho": 37
+    },
+    {
+        "id": 266,
+        "alimento": "Castagne, arrostite",
+        "cho": 42
+    },
+    {
+        "id": 267,
+        "alimento": "Castagne, bollite",
+        "cho": 26
+    },
+    {
+        "id": 268,
+        "alimento": "Castagne, secche",
+        "cho": 62
+    },
+    {
+        "id": 269,
+        "alimento": "Cocco",
+        "cho": 4
+    },
+    {
+        "id": 270,
+        "alimento": "Cocco, essiccato",
+        "cho": 16
+    },
+    {
+        "id": 271,
+        "alimento": "Macadamia",
+        "cho": 5
+    },
+    {
+        "id": 272,
+        "alimento": "Mandorle dolci, secche",
+        "cho": 5
+    },
+    {
+        "id": 273,
+        "alimento": "Nocciole, secche",
+        "cho": 6
+    },
+    {
+        "id": 274,
+        "alimento": "Noci",
+        "cho": 6
+    },
+    {
+        "id": 275,
+        "alimento": "Noci pecan",
+        "cho": 8
+    },
+    {
+        "id": 276,
+        "alimento": "Noci, secche",
+        "cho": 5
+    },
+    {
+        "id": 277,
+        "alimento": "Pinoli",
+        "cho": 4
+    },
+    {
+        "id": 278,
+        "alimento": "Pistacchi",
+        "cho": 8
+    },
+    {
+        "id": 279,
+        "alimento": "Pistacchi di Bronte DOP",
+        "cho": 7
+    },
+    {
+        "id": 280,
+        "alimento": "Latte di vacca pastorizzato, intero",
+        "cho": 5
+    },
+    {
+        "id": 281,
+        "alimento": "Latte di vacca pastorizzato, parzialmente scremato",
+        "cho": 5
+    },
+    {
+        "id": 282,
+        "alimento": "Latte di vacca pastorizzato, scremato",
+        "cho": 5
+    },
+    {
+        "id": 283,
+        "alimento": "Latte di vacca UHT, intero",
+        "cho": 5
+    },
+    {
+        "id": 284,
+        "alimento": "Latte di vacca UHT, parzialmente scremato",
+        "cho": 5
+    },
+    {
+        "id": 285,
+        "alimento": "Latte di vacca in polvere, intero",
+        "cho": 42
+    },
+    {
+        "id": 286,
+        "alimento": "Latte di vacca in polvere, parzialmente scremato",
+        "cho": 50
+    },
+    {
+        "id": 287,
+        "alimento": "Latte di vacca in polvere, scremato",
+        "cho": 56
+    },
+    {
+        "id": 288,
+        "alimento": "Latte di vacca, condensato zuccherato",
+        "cho": 57
+    },
+    {
+        "id": 289,
+        "alimento": "Latte di vacca, evaporato non zuccherato",
+        "cho": 9
+    },
+    {
+        "id": 290,
+        "alimento": "Latte di bufala",
+        "cho": 5
+    },
+    {
+        "id": 291,
+        "alimento": "Latte di capra",
+        "cho": 5
+    },
+    {
+        "id": 292,
+        "alimento": "Latte di pecora",
+        "cho": 5
+    },
+    {
+        "id": 293,
+        "alimento": "Crema di latte 12% in lipidi",
+        "cho": 4
+    },
+    {
+        "id": 294,
+        "alimento": "Panna (da montare) 35% di lipidi",
+        "cho": 3
+    },
+    {
+        "id": 295,
+        "alimento": "Panna da cucina sterilizzata 23% di lipidi",
+        "cho": 4
+    },
+    {
+        "id": 296,
+        "alimento": "Yogurt caprino",
+        "cho": 5
+    },
+    {
+        "id": 297,
+        "alimento": "Yogurt da latte, intero, alla frutta",
+        "cho": 11
+    },
+    {
+        "id": 298,
+        "alimento": "Yogurt da latte, intero",
+        "cho": 4
+    },
+    {
+        "id": 299,
+        "alimento": "Yogurt da latte, parzialmente scremato",
+        "cho": 4
+    },
+    {
+        "id": 300,
+        "alimento": "Yogurt da latte, scremato",
+        "cho": 4
+    },
+    {
+        "id": 301,
+        "alimento": "Yogurt, 0% lipidi",
+        "cho": 6
+    },
+    {
+        "id": 302,
+        "alimento": "Yogurt greco, 0% lipidi",
+        "cho": 4
+    },
+    {
+        "id": 303,
+        "alimento": "Yogurt greco, 0% lipidi aromatizzato",
+        "cho": 15
+    },
+    {
+        "id": 304,
+        "alimento": "Yogurt greco, da latte intero",
+        "cho": 2
+    },
+    {
+        "id": 305,
+        "alimento": "Yogurt greco, da latte magro alla frutta",
+        "cho": 11
+    },
+    {
+        "id": 306,
+        "alimento": "Baba' al rhum",
+        "cho": 41
+    },
+    {
+        "id": 307,
+        "alimento": "Barretta al cocco ricoperta di cioccolato",
+        "cho": 58
+    },
+    {
+        "id": 308,
+        "alimento": "Canditi (scorzette di frutta)",
+        "cho": 75
+    },
+    {
+        "id": 309,
+        "alimento": "Cannoli alla crema",
+        "cho": 42
+    },
+    {
+        "id": 310,
+        "alimento": "Cannoli siciliani",
+        "cho": 43
+    },
+    {
+        "id": 311,
+        "alimento": "Caramelle dure",
+        "cho": 92
+    },
+    {
+        "id": 312,
+        "alimento": "Caramelle tipo mou",
+        "cho": 71
+    },
+    {
+        "id": 313,
+        "alimento": "Cioccolato al latte",
+        "cho": 51
+    },
+    {
+        "id": 314,
+        "alimento": "Cioccolato al latte con nocciole",
+        "cho": 49
+    },
+    {
+        "id": 315,
+        "alimento": "Cioccolato fondente",
+        "cho": 50
+    },
+    {
+        "id": 316,
+        "alimento": "Crema di nocciole e cacao",
+        "cho": 58
+    },
+    {
+        "id": 317,
+        "alimento": "Croissant",
+        "cho": 38
+    },
+    {
+        "id": 318,
+        "alimento": "Crostata con crema al cacao",
+        "cho": 67
+    },
+    {
+        "id": 319,
+        "alimento": "Crostata con marmellata",
+        "cho": 66
+    },
+    {
+        "id": 320,
+        "alimento": "Crostata con marmellata di albicocche, tipo industriale",
+        "cho": 72
+    },
+    {
+        "id": 321,
+        "alimento": "Gelato confezionato- biscotto con crema, zabaione e cioccolato",
+        "cho": 49
+    },
+    {
+        "id": 322,
+        "alimento": "Gelato confezionato- cacao, in vaschetta",
+        "cho": 25
+    },
+    {
+        "id": 323,
+        "alimento": "Gelato confezionato- caffe, in vaschetta",
+        "cho": 24
+    },
+    {
+        "id": 324,
+        "alimento": "Gelato confezionato- cono con panna e cioccolato",
+        "cho": 35
+    },
+    {
+        "id": 325,
+        "alimento": "Gelato confezionato- cono con panna, scaglie di cioccolato e noccioline",
+        "cho": 33
+    },
+    {
+        "id": 326,
+        "alimento": "Gelato confezionato- fior di latte, in vaschetta",
+        "cho": 21
+    },
+    {
+        "id": 327,
+        "alimento": "Gelato confezionato- fior di latte, ricoperto di sorbetto alla fragola",
+        "cho": 21
+    },
+    {
+        "id": 328,
+        "alimento": "Gelato confezionato- ghiacciolo all'arancio",
+        "cho": 37
+    },
+    {
+        "id": 329,
+        "alimento": "Gelato confezionato- nocciola, in vaschetta",
+        "cho": 25
+    },
+    {
+        "id": 330,
+        "alimento": "Gelato confezionato- panna ricoperta di cioccolato fondente",
+        "cho": 28
+    },
+    {
+        "id": 331,
+        "alimento": "Gelato confezionato- panna, in vaschetta",
+        "cho": 27
+    },
+    {
+        "id": 332,
+        "alimento": "Gelato confezionato- sorbetto al limone, in vaschetta",
+        "cho": 34
+    },
+    {
+        "id": 333,
+        "alimento": "Gelato confezionato- stracciatella, in vaschetta",
+        "cho": 32
+    },
+    {
+        "id": 334,
+        "alimento": "Gelato confezionato- vaniglia, in vaschetta",
+        "cho": 26
+    },
+    {
+        "id": 335,
+        "alimento": "Gelato misto fritto",
+        "cho": 35
+    },
+    {
+        "id": 336,
+        "alimento": "Gomme da masticare, lastrine e confetti",
+        "cho": 70
+    },
+    {
+        "id": 337,
+        "alimento": "Lenti colorate ripiene di cioccolato",
+        "cho": 74
+    },
+    {
+        "id": 338,
+        "alimento": "Marmellata",
+        "cho": 59
+    },
+    {
+        "id": 339,
+        "alimento": "Marmellata, senza zuccheri aggiunti",
+        "cho": 18
+    },
+    {
+        "id": 340,
+        "alimento": "Merendine, con marmellata",
+        "cho": 68
+    },
+    {
+        "id": 341,
+        "alimento": "Merendine, farcite al cacao",
+        "cho": 66
+    },
+    {
+        "id": 342,
+        "alimento": "Merendine, tipo briosche",
+        "cho": 66
+    },
+    {
+        "id": 343,
+        "alimento": "Merendine, tipo pan di spagna",
+        "cho": 63
+    },
+    {
+        "id": 344,
+        "alimento": "Merendine, tipo pasta frolla",
+        "cho": 72
+    },
+    {
+        "id": 345,
+        "alimento": "Miele",
+        "cho": 80
+    },
+    {
+        "id": 346,
+        "alimento": "Panettone",
+        "cho": 56
+    },
+    {
+        "id": 347,
+        "alimento": "Pasta di mandorle",
+        "cho": 55
+    },
+    {
+        "id": 348,
+        "alimento": "Savoiardi",
+        "cho": 70
+    },
+    {
+        "id": 349,
+        "alimento": "Torrone alla mandorla",
+        "cho": 52
+    },
+    {
+        "id": 350,
+        "alimento": "Torta margherita",
+        "cho": 63
+    },
+    {
+        "id": 351,
+        "alimento": "Torta di mele",
+        "cho": 46
+    },
+    {
+        "id": 352,
+        "alimento": "Wafer ricoperto di cioccolato",
+        "cho": 60
+    },
+    {
+        "id": 353,
+        "alimento": "Zucchero, saccarosio",
+        "cho": 105
+    },
+    {
+        "id": 354,
+        "alimento": "Aranciata",
+        "cho": 10
+    },
+    {
+        "id": 355,
+        "alimento": "Bevanda tipo cola",
+        "cho": 11
+    },
+    {
+        "id": 356,
+        "alimento": "Cacao amaro in polvere",
+        "cho": 12
+    },
+    {
+        "id": 357,
+        "alimento": "Caffe' tostato",
+        "cho": 29
+    },
+    {
+        "id": 358,
+        "alimento": "Dadi da brodo",
+        "cho": 5
+    },
+    {
+        "id": 359,
+        "alimento": "Farina di castagne",
+        "cho": 62
+    },
+    {
+        "id": 360,
+        "alimento": "Fecola di patate",
+        "cho": 91
+    },
+    {
+        "id": 361,
+        "alimento": "Lievito di birra, compresso",
+        "cho": 1
+    },
+    {
+        "id": 362,
+        "alimento": "Maionese industriale",
+        "cho": 2
+    },
+    {
+        "id": 363,
+        "alimento": "Minestre in scatola, crema di asparagi",
+        "cho": 4
+    },
+    {
+        "id": 364,
+        "alimento": "Minestre in scatola, crema di cipolle",
+        "cho": 2
+    },
+    {
+        "id": 365,
+        "alimento": "Minestre in scatola, crema di funghi",
+        "cho": 4
+    },
+    {
+        "id": 366,
+        "alimento": "Minestre in scatola, crema di pollo",
+        "cho": 5
+    },
+    {
+        "id": 367,
+        "alimento": "Minestre in scatola, crema di pomodori",
+        "cho": 6
+    },
+    {
+        "id": 368,
+        "alimento": "Minestrone liofilizzato",
+        "cho": 48
+    },
+    {
+        "id": 369,
+        "alimento": "Pappa reale",
+        "cho": 14
+    },
+    {
+        "id": 370,
+        "alimento": "Pop corn",
+        "cho": 78
+    },
+    {
+        "id": 371,
+        "alimento": "Salsa tomato ketchup",
+        "cho": 24
+    },
+    {
+        "id": 372,
+        "alimento": "Soia, latte",
+        "cho": 1
+    },
+    {
+        "id": 373,
+        "alimento": "Soia, salsa",
+        "cho": 8
+    },
+    {
+        "id": 374,
+        "alimento": "Soia, yogurt",
+        "cho": 4
+    },
+    {
+        "id": 375,
+        "alimento": "Te' (foglie)",
+        "cho": 3
+    },
+    {
+        "id": 376,
+        "alimento": "Fette tostate Senza Glutine (Biaglut)",
+        "cho": 76
+    },
+    {
+        "id": 377,
+        "alimento": "Biscotti gocce frolla Classica nutrifree",
+        "cho": 70
+    },
+    {
+        "id": 378,
+        "alimento": "Biscotti gocce frolla Cacao nutrifree",
+        "cho": 62
+    },
+    {
+        "id": 379,
+        "alimento": "Cracker rosmarino (Schar)",
+        "cho": 79
+    },
+    {
+        "id": 380,
+        "alimento": "Grissini mini grissini nutrifre",
+        "cho": 78
+    },
+    {
+        "id": 379,
+        "alimento": "Gallette di riso bio (natura nuova)",
+        "cho": 79
+    },
+    {
+        "id": 380,
+        "alimento": "Pasta senza glutine (Biaglut)",
+        "cho": 76
+    },
+    {
+        "id": 381,
+        "alimento": "Pasta senza glutine (le veneziane)",
+        "cho": 78
+    },
+    {
+        "id": 382,
+        "alimento": "Pasta senza glutine (barilla)",
+        "cho": 80
+    },
+    {
+        "id": 383,
+        "alimento": "Pasta senza glutine (Schar)",
+        "cho": 75
+    },
+    {
+        "id": 384,
+        "alimento": "Pizza Margherita Senza Glutine (Schar)",
+        "cho": 31
+    },
+    {
+        "id": 385,
+        "alimento": "Pizza Margherita Senza Glutine (Buitoni)",
+        "cho": 34
+    },
+    {
+        "id": 386,
+        "alimento": "Big-burger [Pane all'olio o al latte, doppio hamburger di carne bovina, ketchup, verdure]",
+        "cho": 17
+    },
+    {
+        "id": 387,
+        "alimento": "Cheese-burger [Pane all'olio o al latte, hamburger di carne bovina, ketchup, verdure, formaggio]",
+        "cho": 30
+    },
+    {
+        "id": 388,
+        "alimento": "Hamburger [Pane all'olio o al latte, hamburger di carne bovina, ketchup, verdure]",
+        "cho": 30
+    },
+    {
+        "id": 389,
+        "alimento": "Chicken Nuggets, fast food (Pollo fritto a pezzi)",
+        "cho": 15
+    },
+    {
+        "id": 390,
+        "alimento": "Panino con hamburger piccolo",
+        "cho": 29
+    },
+    {
+        "id": 391,
+        "alimento": "Panino fast food",
+        "cho": 47
+    },
+    {
+        "id": 392,
+        "alimento": "Patatine fritte fast food",
+        "cho": 38
+    },
+    {
+        "id": 393,
+        "alimento": "Aperitivi a base di vino",
+        "cho": 17
+    },
+    {
+        "id": 394,
+        "alimento": "Birra chiara",
+        "cho": 4
+    },
+    {
+        "id": 395,
+        "alimento": "Brandy",
+        "cho": 0
+    },
+    {
+        "id": 396,
+        "alimento": "Grappa",
+        "cho": 0
+    },
+    {
+        "id": 397,
+        "alimento": "Liquori da dessert",
+        "cho": 31
+    },
+    {
+        "alimento": "Marsala all'uovo",
+        "cho": 12
+    },
+    {
+        "id": 398,
+        "alimento": "Marsala tipico",
+        "cho": 28
+    },
+    {
+        "id": 399,
+        "alimento": "Spumante",
+        "cho": 1
+    },
+    {
+        "id": 400,
+        "alimento": "Vermouth dolce",
+        "cho": 14
+    },
+    {
+        "id": 401,
+        "alimento": "Vermouth secco",
+        "cho": 4
+    },
+    {
+        "id": 402,
+        "alimento": "Vino da pasto bianco",
+        "cho": 0
+    },
+    {
+        "id": 403,
+        "alimento": "Vino da pasto rosso",
+        "cho": 0
+    },
+    {
+        "id": 404,
+        "alimento": "Whisky",
+        "cho": 0
+    }
+]
