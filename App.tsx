@@ -1,45 +1,22 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { useState } from 'react';
+import { NativeBaseProvider, Box, Text } from 'native-base';
+import Navbar, { Tab } from './src/frontend/components/Navbar';
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
-
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+export default function App() {
+  const [selectedTab, setSelectedTab] = useState<Tab>('calculator');
 
   return (
-    <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
-    </SafeAreaProvider>
+    <NativeBaseProvider>
+      <Box flex={1} bg="white">
+        <Box flex={1} alignItems="center" justifyContent="center">
+          {selectedTab === 'calculator' && <Text fontSize="xl">Calculator</Text>}
+          {selectedTab === 'plate' && <Text fontSize="xl">Plate</Text>}
+          {selectedTab === 'list' && <Text fontSize="xl">List</Text>}
+        </Box>
+        <Navbar selected={selectedTab} onSelect={setSelectedTab} />
+      </Box>
+    </NativeBaseProvider>
   );
 }
 
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
-  return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-export default App;
+// npx react-native start --reset-cache

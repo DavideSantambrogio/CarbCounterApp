@@ -52,6 +52,9 @@ react {
 
     /* Autolinking */
     autolinkLibrariesWithApp()
+
+// Assicura che i font di react-native-vector-icons vengano copiati
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 }
 
 /**
