@@ -1,7 +1,8 @@
 import { Food } from '../../types/Food';
+
 import RNFS from 'react-native-fs';
 
-const dataFilePath = RNFS.DocumentDirectoryPath + '/data.json';
+const dataFilePath = RNFS.MainBundlePath + '/src/assets/data.json';
 
 export const readFoods = async (): Promise<Food[]> => {
     const fileExists = await RNFS.exists(dataFilePath);
