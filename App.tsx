@@ -5,12 +5,21 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import React, { useState } from 'react';
+import { StatusBar, StyleSheet, useColorScheme } from 'react-native';
+import { Provider as PaperProvider, BottomNavigation } from 'react-native-paper';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import MenuPage from './src/pages/MenuPage';
+import DishPage from './src/pages/DishPage';
+import ListPage from './src/pages/ListPage';
+
+const MenuRoute = () => <MenuPage />;
+const DishRoute = () => <DishPage />;
+const ListRoute = () => <ListPage />;
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -25,20 +34,38 @@ function App() {
 
 function AppContent() {
   const safeAreaInsets = useSafeAreaInsets();
+  const [index, setIndex] = useState(0);
+  const [routes] = useState([
+    { key: 'menu', title: 'Menù', icon: 'silverware-fork-knife' },
+    { key: 'dish', title: 'Piatto', icon: 'food' },
+    { key: 'list', title: 'Lista', icon: 'format-list-bulleted' },
+  ]);
+
+  const renderScene = BottomNavigation.SceneMap({
+    menu: MenuRoute,
+    dish: DishRoute,
+    list: ListRoute,
+  });
 
   return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
+    <PaperProvider>
+      <BottomNavigation
+        navigationState={{ index, routes }}
+        onIndexChange={setIndex}
+        renderScene={renderScene}
+        renderIcon={({ route, color }) => (
+          <Icon name={route.icon} color={color} size={24} />
+        )}
+        barStyle={styles.bar}
       />
-    </View>
+    </PaperProvider>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  bar: {
+    backgroundColor: '#fff',
+    elevation: 8,
   },
 });
 
