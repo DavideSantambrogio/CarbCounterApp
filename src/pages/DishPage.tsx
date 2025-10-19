@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
-import { Button, Card, Paragraph, TextInput, DataTable, IconButton } from 'react-native-paper';
+import { View, Text, StyleSheet } from 'react-native';
+import { Button, Card, TextInput, IconButton } from 'react-native-paper';
+import { View as RNView } from 'react-native';
 import { getPlateApi, removeFromPlateApi, clearPlateApi, subscribePlateApi, updatePlateItemApi } from '../backend/api/plateApi';
+import globalStyles from '../styles/globalStyles';
 
 export default function DishPage() {
     const [plate, setPlate] = useState<any[]>([]);
@@ -45,15 +47,25 @@ export default function DishPage() {
 
     return (
         <View style={styles.container}>
-            <Card style={{ width: '95%'}}>
+            <Text style={globalStyles.title}>Il tuo Piatto</Text>
+            <Text style={globalStyles.subtitle}>Scegli quanti grammi di ogni alimento mangiare</Text>
+            <Card style={{ width: '95%' }}>
                 <Card.Content>
-                    <DataTable>
-                        <DataTable.Header>
-                            <DataTable.Title style={styles.colName}>Alimento</DataTable.Title>
-                            <DataTable.Title numeric style={styles.colGrams}>Grammi</DataTable.Title>
-                            <DataTable.Title numeric style={styles.colCho}>CHO</DataTable.Title>
-                            <DataTable.Title numeric style={styles.colActions}>Azioni</DataTable.Title>
-                        </DataTable.Header>
+                    <RNView style={styles.tableContainer}>
+                        <View style={[styles.row, styles.headerRow]}>
+                            <View style={[styles.colName, styles.cellBase, styles.headerCell]}>
+                                <Text style={styles.headerText} numberOfLines={1} ellipsizeMode="tail">Alimento</Text>
+                            </View>
+                            <View style={[styles.colGrams, styles.cellBase, styles.headerCell, styles.cellCenter]}>
+                                <Text style={styles.headerText}>Grammi</Text>
+                            </View>
+                            <View style={[styles.colCho, styles.cellBase, styles.headerCell, styles.cellCenter]}>
+                                <Text style={styles.headerText}>CHO</Text>
+                            </View>
+                            <View style={[styles.colActions, styles.headerCell, styles.cellCenter]}>
+                                <Text style={styles.headerText}>Azioni</Text>
+                            </View>
+                        </View>
 
                         {plate.length === 0 ? (
                             <View style={{ padding: 12 }}>
@@ -61,42 +73,49 @@ export default function DishPage() {
                             </View>
                         ) : (
                             plate.map((item) => (
-                                <DataTable.Row key={String(item.id)}>
-                                    <DataTable.Cell style={styles.colName}>{item?.name ?? item?.alimento}</DataTable.Cell>
-                                    <DataTable.Cell numeric style={styles.colGrams}>
+                                <View key={String(item.id)} style={styles.row}>
+                                    <View style={[styles.colName, styles.cellBase]}>
+                                        <Text style={styles.nameText}>{item?.name ?? item?.alimento}</Text>
+                                    </View>
+                                    <View style={[styles.colGrams, styles.cellBase, styles.cellCenter]}>
                                         <TextInput
-                                            mode="outlined"
+                                            mode="flat"
                                             dense
                                             keyboardType="numeric"
                                             value={String(item?.grams ?? 0)}
                                             onChangeText={(t) => onGramsChange(item.id, t)}
+                                            style={styles.gramsInput}
                                         />
-                                    </DataTable.Cell>
-                                    <DataTable.Cell numeric style={styles.colCho}>{choForItem(item).toFixed(2)}</DataTable.Cell>
-                                    <DataTable.Cell numeric style={[styles.colActions, styles.actionCell]}>
+                                    </View>
+                                    <View style={[styles.colCho, styles.cellBase, styles.cellCenter]}>
+                                        <Text>{choForItem(item).toFixed(1)}</Text>
+                                    </View>
+                                    <View style={[styles.colActions, styles.cellCenter]}>
                                         <IconButton
                                             icon="trash-can-outline"
                                             size={20}
                                             onPress={() => remove(item.id)}
                                         />
-                                    </DataTable.Cell>
-                                </DataTable.Row>
+                                    </View>
+                                </View>
                             ))
                         )}
 
-                        <DataTable.Row>
-                            <DataTable.Cell style={styles.colName}>Total</DataTable.Cell>
-                            <DataTable.Cell style={styles.colGrams}>{""}</DataTable.Cell>
-                            <DataTable.Cell numeric style={styles.colCho}>{totalCho.toFixed(2)}</DataTable.Cell>
-                            <DataTable.Cell style={styles.colActions}>{""}</DataTable.Cell>
-                        </DataTable.Row>
-                    </DataTable>
+
+                    </RNView>
                 </Card.Content>
+                {/* Total row: render without the table cell CSS */}
+                <View style={styles.totalContainer}>
+                    <Text></Text>
+                    <Text style={styles.totalValue}>Totale: {totalCho.toFixed(2)}</Text>
+                </View>
             </Card>
+
             <Button mode="contained" onPress={clearAll} style={{ marginTop: 12 }}>Svuota piatto</Button>
         </View>
     );
 }
+
 
 const styles = StyleSheet.create({
     container: {
@@ -105,41 +124,81 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         marginTop: 40,
     },
-    cell: {
+    tableContainer: {
+        width: '100%',
+        borderWidth: 1,
+        borderColor: '#ccc',
+        borderRadius: 6,
+        overflow: 'hidden',
+    },
+    // shared cell base to reduce duplication
+    cellBase: {
+        paddingHorizontal: 10,
+        paddingVertical: 8,
         borderRightWidth: 1,
         borderRightColor: '#ddd',
-        paddingHorizontal: 6,
+        justifyContent: 'center',
     },
-    cellLast: {
-        paddingHorizontal: 6,
+    // header-specific tweaks
+    headerCell: {
+        paddingVertical: 12,
+        backgroundColor: '#f6f6f6',
     },
-    // fixed column widths to keep table aligned
+    // columns
     colName: {
-        width: 300,
-        paddingHorizontal: 8,
-        borderRightWidth: 1,
-        borderRightColor: '#ddd',
+        flex: 1,
+        minWidth: 120,
     },
     colGrams: {
-        width: 50,
-        paddingHorizontal: 8,
-        borderRightWidth: 1,
-        borderRightColor: '#ddd',
+        width: 80,
         alignItems: 'center',
     },
     colCho: {
-        width: 50,
-        paddingHorizontal: 8,
-        borderRightWidth: 1,
-        borderRightColor: '#ddd',
+        width: 65,
     },
     colActions: {
-        width: 50,
-        paddingHorizontal: 8,
-    },
-    actionCell: {
+        width: 60,
         alignItems: 'center',
         justifyContent: 'center',
+        borderRightWidth: 0,
     },
-
+    // rows / header / footer
+    row: {
+        flexDirection: 'row',
+        alignItems: 'stretch',
+        borderBottomWidth: 1,
+        borderBottomColor: '#ddd',
+    },
+    headerRow: {
+        // kept for row-level header styles; cell background moved to headerCell
+    },
+    // footerRow was removed as Total uses separate container
+    headerText: {
+        fontWeight: '600',
+        fontSize: 14,
+    },
+    gramsInput: {
+        height: 32,
+        width: 56,
+        backgroundColor: 'transparent',
+        textAlign: 'center',
+    },
+    cellCenter: {
+        justifyContent: 'center',
+    },
+    nameText: {
+        flexShrink: 1,
+        flexWrap: 'wrap',
+        lineHeight: 18,
+    },
+    totalContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        padding: 12,
+        width: '95%',
+        alignSelf: 'center',
+    },
+    totalValue: {
+        fontWeight: '700',
+    },
 });

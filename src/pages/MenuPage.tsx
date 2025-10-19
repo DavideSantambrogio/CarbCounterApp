@@ -5,6 +5,7 @@ import { getFoodsApi, addFoodApi } from '../backend/api';
 import { addToPlateApi, getPlateApi, subscribePlateApi } from '../backend/api/plateApi';
 import Toast from '../components/Toast';
 import { Food } from '../types/Food';
+import globalStyles from '../styles/globalStyles';
 
 export default function MenuPage() {
     const [foods, setFoods] = useState<Food[]>([]);
@@ -79,17 +80,18 @@ export default function MenuPage() {
 
     return (
         <View style={styles.container}>
+            <Text style={globalStyles.title}>Scegli cosa mangiare</Text>
             <TextInput
                 placeholder="Cerca..."
                 value={query}
                 onChangeText={setQuery}
-                style={{ width: '95%' }}
+                style={{ width: '80%'}}
             />
 
 
             <FlatList
                 data={visible}
-                contentContainerStyle={{ paddingBottom: 30 }}
+                contentContainerStyle={{ padding: 15 }}
                 keyExtractor={(item) => String((item as any).id)}
                 renderItem={({ item }) => (
                     <Card style={{ marginVertical: 6, width: '95%' }}>
