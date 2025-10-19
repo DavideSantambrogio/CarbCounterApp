@@ -1,12 +1,15 @@
 import { Food } from '../../types/Food';
+import { loadItems, saveItems } from './storage';
 
-import RNFS from 'react-native-fs';
-
-const dataFilePath = RNFS.MainBundlePath + '/src/assets/data.json';
-
-export const createFood = async (food: Food): Promise<void> => {
-    const data = await RNFS.readFile(dataFilePath, 'utf8');
-    const foods: Food[] = JSON.parse(data);
-    foods.push(food);
-    await RNFS.writeFile(dataFilePath, JSON.stringify(foods, null, 2), 'utf8');
+export const createFood = async (food: Partial<Food>): Promise<Food> => {
+    const items = await loadItems();
+    const created: Food = {
+        id: (Date.now()).toString(),
+        name: (food as any).name ?? 'Unnamed',
+        carbs: (food as any).carbs ?? 0,
+        ...food,
+    } as Food;
+    items.push(created);
+    await saveItems(items);
+    return created;
 };

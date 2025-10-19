@@ -1,12 +1,11 @@
 import { Food } from '../../types/Food';
+import { loadItems, saveItems } from './storage';
 
-import RNFS from 'react-native-fs';
-
-const dataFilePath = RNFS.MainBundlePath + '/src/assets/data.json';
-
-export const deleteFood = async (id: string): Promise<void> => {
-    const data = await RNFS.readFile(dataFilePath, 'utf8');
-    const foods: Food[] = JSON.parse(data);
-    const newFoods = foods.filter(f => f.id !== id);
-    await RNFS.writeFile(dataFilePath, JSON.stringify(newFoods, null, 2), 'utf8');
+export const deleteFood = async (id: string): Promise<Food> => {
+    const items = await loadItems();
+    const idx = items.findIndex((f: any) => String(f.id) === String(id));
+    if (idx === -1) throw new Error('Not found');
+    const removed = items.splice(idx, 1)[0];
+    await saveItems(items);
+    return removed as Food;
 };
