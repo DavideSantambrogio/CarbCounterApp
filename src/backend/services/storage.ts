@@ -43,10 +43,15 @@ export async function savePlate(items: any[]): Promise<void> {
     notifyPlateListeners();
 }
 
-export async function addToPlate(item: any): Promise<void> {
+export async function addToPlate(item: any): Promise<boolean> {
     const plate = await loadPlate();
+    const exists = plate.find((p: any) => String(p.id) === String(item?.id));
+    if (exists) {
+        return false;
+    }
     plate.push(item);
     await savePlate(plate);
+    return true;
 }
 
 export async function removeFromPlate(id: string): Promise<void> {

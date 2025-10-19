@@ -34,6 +34,7 @@ export default function DishPage() {
             <Button mode="contained" onPress={clearAll} style={{ marginBottom: 12 }}>Svuota piatto</Button>
             <FlatList
                 data={plate}
+                contentContainerStyle={{ paddingBottom: 96 }}
                 keyExtractor={(item) => String(item.id)}
                 renderItem={({ item }) => (
                     <Card style={{ marginVertical: 6, width: '95%' }}>

@@ -5,7 +5,7 @@ export const getPlateApi = async () => {
 };
 
 export const addToPlateApi = async (item: any) => {
-    await addToPlate(item);
+    return await addToPlate(item);
 };
 
 export const removeFromPlateApi = async (id: string) => {
