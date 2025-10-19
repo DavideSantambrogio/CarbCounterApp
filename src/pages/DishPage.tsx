@@ -45,9 +45,7 @@ export default function DishPage() {
 
     return (
         <View style={styles.container}>
-            <Button mode="contained" onPress={clearAll} style={{ marginBottom: 12 }}>Svuota piatto</Button>
-
-            <Card style={{ width: '95%' }}>
+            <Card style={{ width: '95%'}}>
                 <Card.Content>
                     <DataTable>
                         <DataTable.Header>
@@ -95,6 +93,7 @@ export default function DishPage() {
                     </DataTable>
                 </Card.Content>
             </Card>
+            <Button mode="contained" onPress={clearAll} style={{ marginTop: 12 }}>Svuota piatto</Button>
         </View>
     );
 }
@@ -104,7 +103,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'flex-start',
-        paddingTop: 12,
+        marginTop: 40,
     },
     cell: {
         borderRightWidth: 1,

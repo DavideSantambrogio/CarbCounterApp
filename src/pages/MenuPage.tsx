@@ -83,7 +83,7 @@ export default function MenuPage() {
                 placeholder="Cerca..."
                 value={query}
                 onChangeText={setQuery}
-                style={{ width: '95%', margin: 20 }}
+                style={{ width: '95%' }}
             />
 
 
@@ -131,6 +131,6 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'flex-start',
-        paddingTop: 12,
+        marginTop: 40,
     },
 });
