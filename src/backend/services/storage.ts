@@ -49,9 +49,21 @@ export async function addToPlate(item: any): Promise<boolean> {
     if (exists) {
         return false;
     }
-    plate.push(item);
+    // ensure a grams field exists (default 100g)
+    const toAdd = { ...(item ?? {}), grams: item?.grams ?? 100 };
+    plate.push(toAdd);
     await savePlate(plate);
     return true;
+}
+
+export async function updatePlateItem(id: string, patch: any): Promise<any | null> {
+    const plate = await loadPlate();
+    const idx = plate.findIndex((p: any) => String(p.id) === String(id));
+    if (idx === -1) return null;
+    const updated = { ...plate[idx], ...patch };
+    plate[idx] = updated;
+    await savePlate(plate);
+    return updated;
 }
 
 export async function removeFromPlate(id: string): Promise<void> {
