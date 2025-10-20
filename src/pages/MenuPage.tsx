@@ -85,7 +85,7 @@ export default function MenuPage() {
                 placeholder="Cerca..."
                 value={query}
                 onChangeText={setQuery}
-                style={{ width: '80%'}}
+                style={{ width: '80%' }}
             />
 
 
@@ -94,7 +94,7 @@ export default function MenuPage() {
                 contentContainerStyle={{ padding: 15 }}
                 keyExtractor={(item) => String((item as any).id)}
                 renderItem={({ item }) => (
-                    <Card style={{ marginVertical: 6, width: '95%' }}>
+                    <Card style={[{ marginVertical: 6 }, styles.cardFixed]}>
                         <Card.Content>
                             <Text style={{ fontSize: 18 }}>{(item as any).name ?? (item as any).alimento}</Text>
                             <Paragraph>Carboidrati: {(item as any).carbs ?? (item as any).cho}</Paragraph>
@@ -134,5 +134,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
         marginTop: 40,
+    },
+    cardFixed: {
+        width: 280,
+        alignSelf: 'center',
     },
 });

@@ -3,10 +3,14 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Button, Card, TextInput, IconButton } from 'react-native-paper';
 import { View as RNView } from 'react-native';
 import { getPlateApi, removeFromPlateApi, clearPlateApi, subscribePlateApi, updatePlateItemApi } from '../backend/api/plateApi';
+import ConfirmModal from '../components/ConfirmModal';
 import globalStyles from '../styles/globalStyles';
 
 export default function DishPage() {
     const [plate, setPlate] = useState<any[]>([]);
+    const [confirmVisible, setConfirmVisible] = useState(false);
+    const [confirmMessage, setConfirmMessage] = useState<string | undefined>(undefined);
+    const [confirmAction, setConfirmAction] = useState<(() => Promise<void>) | null>(null);
 
     const load = async () => {
         const items = await getPlateApi();
@@ -26,9 +30,21 @@ export default function DishPage() {
         await load();
     };
 
+    const confirmRemove = (id: string) => {
+        setConfirmMessage('Sei sicuro di voler rimuovere questo alimento dal piatto?');
+        setConfirmAction(() => async () => { await remove(id); });
+        setConfirmVisible(true);
+    };
+
     const clearAll = async () => {
         await clearPlateApi();
         await load();
+    };
+
+    const confirmClearAll = () => {
+        setConfirmMessage('Sei sicuro di voler svuotare il piatto?');
+        setConfirmAction(() => async () => { await clearAll(); });
+        setConfirmVisible(true);
     };
 
     const onGramsChange = async (id: string, gramsValue: string) => {
@@ -94,7 +110,7 @@ export default function DishPage() {
                                         <IconButton
                                             icon="trash-can-outline"
                                             size={20}
-                                            onPress={() => remove(item.id)}
+                                            onPress={() => confirmRemove(item.id)}
                                         />
                                     </View>
                                 </View>
@@ -111,7 +127,22 @@ export default function DishPage() {
                 </View>
             </Card>
 
-            <Button mode="contained" onPress={clearAll} style={{ marginTop: 12 }}>Svuota piatto</Button>
+            <Button mode="contained" onPress={confirmClearAll} style={{ marginTop: 12 }} disabled={plate.length === 0}>Svuota piatto</Button>
+
+            <ConfirmModal
+                visible={confirmVisible}
+                title="Conferma"
+                message={confirmMessage}
+                onDismiss={() => { setConfirmVisible(false); setConfirmAction(null); }}
+                onConfirm={async () => {
+                    setConfirmVisible(false);
+                    try {
+                        if (confirmAction) await confirmAction();
+                    } finally {
+                        setConfirmAction(null);
+                    }
+                }}
+            />
         </View>
     );
 }
