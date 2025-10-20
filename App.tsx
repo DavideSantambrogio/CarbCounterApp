@@ -15,11 +15,11 @@ import {
 } from 'react-native-safe-area-context';
 import MenuPage from './src/pages/MenuPage';
 import DishPage from './src/pages/DishPage';
-import ListPage from './src/pages/ListPage';
+import AdminPage from './src/pages/AdminPage';
 
 const MenuRoute = () => <MenuPage />;
 const DishRoute = () => <DishPage />;
-const ListRoute = () => <ListPage />;
+const ListRoute = () => <AdminPage />;
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -38,7 +38,7 @@ function AppContent() {
   const [routes] = useState([
     { key: 'menu', title: 'Menù', icon: 'silverware-fork-knife' },
     { key: 'dish', title: 'Piatto', icon: 'food' },
-    { key: 'list', title: 'Lista', icon: 'format-list-bulleted' },
+    { key: 'list', title: 'Admin', icon: 'shield-account' },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
