@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import { Button, Card, TextInput, IconButton } from 'react-native-paper';
 import { View as RNView } from 'react-native';
 import { getPlateApi, removeFromPlateApi, clearPlateApi, subscribePlateApi, updatePlateItemApi } from '../backend/api/plateApi';
@@ -65,24 +65,26 @@ export default function DishPage() {
         <View style={styles.container}>
             <Text style={globalStyles.title}>Il tuo Piatto</Text>
             <Text style={globalStyles.subtitle}>Scegli quanti grammi di ogni alimento mangiare</Text>
-            <Card style={{ width: '95%' }}>
-                <Card.Content>
-                    <RNView style={styles.tableContainer}>
-                        <View style={[styles.row, styles.headerRow]}>
-                            <View style={[styles.colName, styles.cellBase, styles.headerCell]}>
-                                <Text style={styles.headerText} numberOfLines={1} ellipsizeMode="tail">Alimento</Text>
-                            </View>
-                            <View style={[styles.colGrams, styles.cellBase, styles.headerCell, styles.cellCenter]}>
-                                <Text style={styles.headerText}>Grammi</Text>
-                            </View>
-                            <View style={[styles.colCho, styles.cellBase, styles.headerCell, styles.cellCenter]}>
-                                <Text style={styles.headerText}>CHO</Text>
-                            </View>
-                            <View style={[styles.colActions, styles.headerCell, styles.cellCenter]}>
-                                <Text style={styles.headerText}>Azioni</Text>
-                            </View>
+            <Card style={styles.cardFull}>
+                <Card.Content style={styles.cardContent}>
+                    {/* header row */}
+                    <View style={[styles.row, styles.headerRow]}>
+                        <View style={[styles.colName, styles.cellBase, styles.headerCell]}>
+                            <Text style={[styles.headerText, globalStyles.subtitle]} numberOfLines={1} ellipsizeMode="tail">Alimento</Text>
                         </View>
+                        <View style={[styles.colGrams, styles.cellBase, styles.headerCell, styles.cellCenter]}>
+                            <Text style={[styles.headerText, globalStyles.subtitle]}>Grammi</Text>
+                        </View>
+                        <View style={[styles.colCho, styles.cellBase, styles.headerCell, styles.cellCenter]}>
+                            <Text style={[styles.headerText, globalStyles.subtitle]}>CHO</Text>
+                        </View>
+                        <View style={[styles.colActions, styles.headerCell, styles.cellCenter]}>
+                            <Text style={[styles.headerText, globalStyles.subtitle]}>Azioni</Text>
+                        </View>
+                    </View>
 
+                    {/* scrollable table body */}
+                    <ScrollView style={styles.scrollArea} contentContainerStyle={{ flexGrow: 1 }}>
                         {plate.length === 0 ? (
                             <View style={{ padding: 12 }}>
                                 <Text>Il piatto è vuoto</Text>
@@ -116,19 +118,13 @@ export default function DishPage() {
                                 </View>
                             ))
                         )}
-
-
-                    </RNView>
+                    </ScrollView>
                 </Card.Content>
-                {/* Total row: render without the table cell CSS */}
-                <View style={styles.totalContainer}>
-                    <Text></Text>
-                    <Text style={styles.totalValue}>Totale: {totalCho.toFixed(2)}</Text>
-                </View>
             </Card>
 
-            <Button mode="contained" onPress={confirmClearAll} style={{ marginTop: 12 }} disabled={plate.length === 0}>Svuota piatto</Button>
+            <Text style={styles.totalValue}>Totale: {totalCho.toFixed(2)}</Text>
 
+            <Button mode="contained" onPress={confirmClearAll} disabled={plate.length === 0}>Svuota piatto</Button>
             <ConfirmModal
                 visible={confirmVisible}
                 title="Conferma"
@@ -231,5 +227,24 @@ const styles = StyleSheet.create({
     },
     totalValue: {
         fontWeight: '700',
+        width: '95%',
+        textAlign: 'right',
+        paddingVertical: 20,
+        paddingHorizontal: 15,
+    },
+    cardFull: {
+        width: '95%',
+        maxHeight: '75%',
+        alignSelf: 'center',
+        borderRadius: 6,
+    },
+    cardContent: {
+        padding: 0,
+    },
+    scrollArea: {
+        maxHeight: '90%',
+    },
+    footerBar: {
+
     },
 });

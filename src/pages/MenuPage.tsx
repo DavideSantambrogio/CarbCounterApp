@@ -4,6 +4,8 @@ import { Button, Card, Paragraph, TextInput } from 'react-native-paper';
 import { getFoodsApi, addFoodApi } from '../backend/api';
 import { addToPlateApi, getPlateApi, subscribePlateApi } from '../backend/api/plateApi';
 import Toast from '../components/Toast';
+import MenuSearch from '../components/MenuSearch';
+import FoodList from '../components/FoodList';
 import { Food } from '../types/Food';
 import globalStyles from '../styles/globalStyles';
 
@@ -81,42 +83,14 @@ export default function MenuPage() {
     return (
         <View style={styles.container}>
             <Text style={globalStyles.title}>Scegli cosa mangiare</Text>
-            <TextInput
-                placeholder="Cerca..."
-                value={query}
-                onChangeText={setQuery}
-                style={{ width: '80%' }}
-            />
+            <MenuSearch query={query} onChange={setQuery} />
 
-
-            <FlatList
-                data={visible}
-                contentContainerStyle={{ padding: 15 }}
-                keyExtractor={(item) => String((item as any).id)}
-                renderItem={({ item }) => (
-                    <Card style={[{ marginVertical: 6 }, styles.cardFixed]}>
-                        <Card.Content>
-                            <Text style={{ fontSize: 18 }}>{(item as any).name ?? (item as any).alimento}</Text>
-                            <Paragraph>Carboidrati: {(item as any).carbs ?? (item as any).cho}</Paragraph>
-                        </Card.Content>
-                        <Card.Actions>
-                            <Button onPress={() => addToPlate(item)} disabled={!!plateItems.find(p => String(p.id) === String((item as any).id))}>
-                                Aggiungi al piatto
-                            </Button>
-                        </Card.Actions>
-                    </Card>
-                )}
-                ListEmptyComponent={() => (
-                    <Text>Nessun elemento. Premi "Aggiungi esempio" per crearne uno.</Text>
-                )}
-                ListFooterComponent={() => (
-                    visible.length < filtered.length ? (
-                        <Button mode="outlined" onPress={() => setPage(p => p + 1)} style={{ marginVertical: 12 }}>
-                            Vedi altro
-                        </Button>
-                    ) : null
-                )}
-                onEndReachedThreshold={0.5}
+            <FoodList
+                items={visible}
+                plateItems={plateItems}
+                onAddToPlate={addToPlate}
+                onLoadMore={() => setPage(p => p + 1)}
+                hasMore={visible.length < filtered.length}
             />
 
             <Toast
