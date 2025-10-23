@@ -370,6 +370,7 @@
         "cho": 80
     },
     {
+        "id": 405,
         "alimento": "Riso integrale crudo",
         "cho": 77
     },
@@ -1904,12 +1905,12 @@
         "cho": 78
     },
     {
-        "id": 379,
+        "id": 406,
         "alimento": "Gallette di riso bio (natura nuova)",
         "cho": 79
     },
     {
-        "id": 380,
+        "id": 407,
         "alimento": "Pasta senza glutine (Biaglut)",
         "cho": 76
     },
@@ -1999,6 +2000,7 @@
         "cho": 31
     },
     {
+        "id": 408,
         "alimento": "Marsala all'uovo",
         "cho": 12
     },
