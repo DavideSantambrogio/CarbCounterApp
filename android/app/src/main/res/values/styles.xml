@@ -1,7 +1,9 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <!-- Base application theme. Force light mode and disable system force-dark so app colors remain as designed. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Prevent Android Q+ from automatically inverting colors (force dark). -->
+        <item name="android:forceDarkAllowed">false</item>
         <!-- Customize your theme here. -->
         <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
     </style>
